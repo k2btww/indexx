@@ -49,7 +49,7 @@ z-index:2;
 opacity:.9;
 margin:0 auto;
 text-shadow:0px 0px 3px white;
-animation:glitch 3s infinite;
+animation:glitch 1.5s infinite;
 cursor:pointer;
 font-size:52px;
 color:white;
@@ -83,20 +83,84 @@ animation-play-state: paused;
 }
 /* JUST RANDOM VALUES HERE! */
 @keyframes glitch{
+0%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
 3%{text-shadow:7px 7px 0px red;}
-6%{text-shadow:-9px 4px 0px blue;transform:translate(4px,-10px) skewX(3240deg);}
+6%{text-shadow:-9px 4px 0px blue;transform:translate(4px,-10px) skew(3240deg);}
 7%{text-shadow:3px -4px 0px green;}
-9%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skewX(0deg);}
-2% , 54%{transform:translateX(0px) skew(0deg);}
-55%{transform:translate(-2px,6px) skew(-5530deg);}
-56%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
-57%{text-shadow:7px 7px 0px red;transform:translate(4px,-10px) skew(-70deg);}
-58%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
-62%{text-shadow:3px -4px 0px green;transform:translate(0px,20px) skew(0deg);}
-63%{text-shadow:0px 0px 3px white;transform:translate(4px,-2px) skew(0deg);}
-64%{transform:translate(1px,3px); skew(-230deg);}
-65%{transform:translate(-7px,2px); skew(120deg);}
-66%{transform:translate(0px,0px) skew(0deg);}
+9%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
+12%{text-shadow:2px 2px 0px red;transform:translate(-1px,2px) skew(-10deg);}
+15%{text-shadow:-3px 1px 0px blue;transform:translate(2px,-3px) skew(15deg);}
+18%{text-shadow:1px -2px 0px green;transform:translate(-2px,1px) skew(-5deg);}
+21%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
+24%{text-shadow:4px 4px 0px red;transform:translate(3px,-5px) skew(20deg);}
+27%{text-shadow:-6px 2px 0px blue;transform:translate(-4px,3px) skew(-25deg);}
+30%{text-shadow:2px -3px 0px green;transform:translate(1px,-2px) skew(10deg);}
+33%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
+36%{text-shadow:5px 5px 0px red;transform:translate(-3px,4px) skew(-15deg);}
+39%{text-shadow:-8px 3px 0px blue;transform:translate(5px,-6px) skew(30deg);}
+42%{text-shadow:3px -4px 0px green;transform:translate(-2px,2px) skew(-8deg);}
+45%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
+48%{text-shadow:6px 6px 0px red;transform:translate(4px,-7px) skew(25deg);}
+51%{text-shadow:-10px 4px 0px blue;transform:translate(-6px,5px) skew(-35deg);}
+54%{text-shadow:4px -5px 0px green;transform:translate(3px,-3px) skew(12deg);}
+57%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
+60%{text-shadow:7px 7px 0px red;transform:translate(-5px,6px) skew(-20deg);}
+63%{text-shadow:-12px 5px 0px blue;transform:translate(7px,-8px) skew(40deg);}
+66%{text-shadow:5px -6px 0px green;transform:translate(-4px,4px) skew(-15deg);}
+69%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
+72%{text-shadow:8px 8px 0px red;transform:translate(6px,-9px) skew(30deg);}
+75%{text-shadow:-14px 6px 0px blue;transform:translate(-8px,7px) skew(-45deg);}
+78%{text-shadow:6px -7px 0px green;transform:translate(5px,-5px) skew(18deg);}
+81%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
+84%{text-shadow:9px 9px 0px red;transform:translate(-7px,8px) skew(-25deg);}
+87%{text-shadow:-16px 7px 0px blue;transform:translate(9px,-10px) skew(50deg);}
+90%{text-shadow:7px -8px 0px green;transform:translate(-6px,6px) skew(-22deg);}
+93%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
+96%{text-shadow:10px 10px 0px red;transform:translate(8px,-11px) skew(35deg);}
+99%{text-shadow:-18px 8px 0px blue;transform:translate(-10px,9px) skew(-55deg);}
+100%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
+}
+.glitch-text-light {
+  font-family: monospace;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.8;
+  text-shadow: 0px 0px 2px #fff;
+  animation: glitch-light 2.5s infinite;
+  margin-top: 6px;
+}
+@keyframes glitch-light {
+  0% { text-shadow: 1px 1px 0px #00fff7, -1px -1px 0px #ff00ea; transform: translate(0,0); }
+  10% { text-shadow: 2px 0px 2px #00fff7, -2px 1px 2px #ff00ea; transform: translate(-1px,1px); }
+  20% { text-shadow: 0px 2px 2px #00fff7, 1px -2px 2px #ff00ea; transform: translate(1px,-1px); }
+  30% { text-shadow: 1px -1px 2px #00fff7, -1px 2px 2px #ff00ea; transform: translate(-1px,0px); }
+  40% { text-shadow: 0px 0px 2px #fff; transform: translate(0,0); }
+  100% { text-shadow: 0px 0px 2px #fff; transform: translate(0,0); }
+}
+.glitch-img {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  box-shadow: 0 0 28px #000;
+  position: relative;
+  animation: glitch-img 0.8s infinite steps(2, end);
+}
+@keyframes glitch-img {
+  0% { filter: none; transform: none; }
+  7% { filter: contrast(1.5) brightness(1.2) hue-rotate(20deg) saturate(2); transform: translate(6px, -6px) skewX(3deg) scale(1.03); }
+  14% { filter: contrast(1.2) brightness(1.4) hue-rotate(-18deg) saturate(1.7); transform: translate(-7px, 7px) skewY(-2deg) scale(0.98); }
+  21% { filter: none; transform: none; }
+  28% { filter: contrast(1.7) brightness(0.8) hue-rotate(12deg) saturate(2.2); transform: translate(4px, -4px) skewX(-4deg) scale(1.04); }
+  35% { filter: none; transform: none; }
+  42% { filter: contrast(1.3) brightness(1.3) hue-rotate(-25deg) saturate(2.5); transform: translate(-5px, 5px) skewY(4deg) scale(1.01); }
+  49% { filter: none; transform: none; }
+  56% { filter: contrast(1.8) brightness(1.1) hue-rotate(30deg) saturate(2.8); transform: translate(8px, -8px) skewX(5deg) scale(1.06); }
+  63% { filter: none; transform: none; }
+  70% { filter: contrast(1.4) brightness(1.5) hue-rotate(-35deg) saturate(2.9); transform: translate(-9px, 9px) skewY(-5deg) scale(0.97); }
+  77% { filter: none; transform: none; }
+  84% { filter: contrast(2) brightness(0.7) hue-rotate(40deg) saturate(3); transform: translate(10px, -10px) skewX(-6deg) scale(1.08); }
+  91% { filter: none; transform: none; }
+  100% { filter: none; transform: none; }
 }
 </style>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"></head>
@@ -110,4 +174,8 @@ animation-play-state: paused;
  
 <div class="glitch-text"><a rollapp-href=""><small><small><small><span style="color: red;"><img alt="" image_download_for_instagram="true"></span></small></small></small></a><small><small><small> </small></small></small></div></div>
 <embed src="http://www.youtube.com/v/oK-xVR_WTdM&amp;autoplay=1" type="application/x-shockwave-flash" wmode="transparent" width="1" height="1"><br>
+<!-- Yeni içerik başlıyor -->
+<div style="text-align:center; margin-top: 10px;">
+  <img class="glitch-img" src="https://media.licdn.com/dms/image/v2/C5603AQHJtWDLYuneQg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1522505273247?e=2147483647&v=beta&t=t3eKewfXWMX5Fj8KKoBgcjIwYmDGmhdpFrZ1wdXdVAU" alt="profile">
+</div>
 </body></html>
